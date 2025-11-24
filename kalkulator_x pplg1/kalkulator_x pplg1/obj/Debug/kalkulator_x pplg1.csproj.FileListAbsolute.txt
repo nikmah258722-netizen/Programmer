@@ -1,0 +1,7 @@
+D:\khansaayualkaila\kalkulator_x pplg1\kalkulator_x pplg1\bin\Debug\kalkulator_x pplg1.exe.config
+D:\khansaayualkaila\kalkulator_x pplg1\kalkulator_x pplg1\bin\Debug\kalkulator_x pplg1.exe
+D:\khansaayualkaila\kalkulator_x pplg1\kalkulator_x pplg1\bin\Debug\kalkulator_x pplg1.pdb
+D:\khansaayualkaila\kalkulator_x pplg1\kalkulator_x pplg1\obj\Debug\kalkulator_x pplg1.csproj.AssemblyReference.cache
+D:\khansaayualkaila\kalkulator_x pplg1\kalkulator_x pplg1\obj\Debug\kalkulator_x pplg1.csproj.CoreCompileInputs.cache
+D:\khansaayualkaila\kalkulator_x pplg1\kalkulator_x pplg1\obj\Debug\kalkulator_x pplg1.exe
+D:\khansaayualkaila\kalkulator_x pplg1\kalkulator_x pplg1\obj\Debug\kalkulator_x pplg1.pdb
