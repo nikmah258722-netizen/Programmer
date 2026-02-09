@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran SMK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        fieldset {
+            width: 600px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
+
+<h2 align="center">FORMULIR PENDAFTARAN CALON SISWA BARU SMK</h2>
+
+<form action="#" method="post">
+
+    <!-- BIODATA SISWA -->
+    <fieldset>
+        <legend>BIODATA SISWA</legend>
+        <table>
+            <tr>
+                <td>No. UN SMP/MTs/Sederajat</td>
+                <td><input type="text" name="no_un"></td>
+            </tr>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="jk" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Nama Orangtua/Wali</td>
+                <td><input type="text" name="ortu"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>
+                    <textarea name="alamat" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Kota/Kabupaten</td>
+                <td><input type="text" name="kota"></td>
+            </tr>
+            <tr>
+                <td>Asal Sekolah</td>
+                <td><input type="text" name="asal_sekolah"></td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>
+                    <select name="agama">
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Buddha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <!-- PENILAIAN -->
+    <fieldset>
+        <legend>PENILAIAN</legend>
+        <table>
+            <tr>
+                <td>1. Matematika</td>
+                <td><input type="number" name="mtk"></td>
+            </tr>
+            <tr>
+                <td>2. Bahasa Indonesia</td>
+                <td><input type="number" name="indo"></td>
+            </tr>
+            <tr>
+                <td>3. Bahasa Inggris</td>
+                <td><input type="number" name="inggris"></td>
+            </tr>
+            <tr>
+                <td>4. IPA</td>
+                <td><input type="number" name="ipa"></td>
+            </tr>
+            <tr>
+                <td>Jumlah NUN</td>
+                <td><input type="number" name="jumlah_nun"></td>
+            </tr>
+            <tr>
+                <td>Nilai Bonus Prestasi (NBP)</td>
+                <td><input type="number" name="nbp"></td>
+            </tr>
+            <tr>
+                <td>Jumlah Total Nilai Akhir PPDB</td>
+                <td><input type="number" name="total"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <input type="submit" value="Kirim">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>

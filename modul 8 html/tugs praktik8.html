@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>FORMULIR PENDAFTARAN CALON SISWA BARU SMK</h2>
+    </center>
+    <center>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>BIODATA SISWA</legend>
+            <table>
+                <tr>
+                    <td>No. UN SMP/MTs/Sederajat</td>
+                    <td><input type="text" name="no.un_smp/mts/sederajat" required></td>
+                </tr>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td><input type="text" name="nama_lengkap" required></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                    <label for="laki-laki">
+                    <input type="radio" id="laki-laki" name="laki-laki" value="laki-laki">
+                    Laki-laki
+                    </label><br>
+                    <label for="perempuan">
+                    <input type="radio" id="perempuan" name="perempuan" value="perempuan">
+                    Perempuan
+                    </label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nama Orangtua/Wali</td>
+                    <td><input type="text" name="nama_orangtua/wali" required></td>
+                </tr>
+                <tr>
+                    <td>Alamat (sesuai KK/KTP/SuratKet)</td>
+                    <td><input type="text" name></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    </center>
+</body>
+</html>
