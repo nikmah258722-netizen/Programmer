@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nadlifatun nikmah</title>
+    
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #ec4899;
+            --accent: #06b6d4;
+            --bg: #0f172a;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg);
+            background-image: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #0f172a 100%);
+            color: #f1f5f9;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center; /* Materi Alignment */
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: -2px; /* Materi Spacing */
+            word-spacing: 10px;    /* Materi Spacing */
+            text-transform: capitalize; /* Materi Transform */
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .tag {
+            font-size: 10px; /* Materi Small */
+            letter-spacing: 2px; /* Materi Spacing */
+            text-transform: uppercase; /* Materi Transform */
+            background: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* --- IMPLEMENTASI MATERI KHUSUS --- */
+
+        .indent-demo {
+            text-indent: 3em; /* Materi Indent */
+            line-height: 1.8; /* Materi Line Height */
+            text-align: justify; /* Materi Alignment */
+        }
+
+        .align-left { text-align: left; color: var(--accent); }
+        .align-center { text-align: center; color: var(--secondary); }
+        .align-right { text-align: right; color: #fff; }
+
+        .deco-wavy { text-decoration: underline wavy var(--primary); text-underline-offset: 8px; } /* Upgrade Decoration */
+        .deco-strike { text-decoration: line-through 2px var(--secondary); } /* Materi Decoration */
+        .deco-over { text-decoration: overline dashed var(--accent); }    /* Materi Decoration */
+
+        .code-block {
+            font-family: 'Fira Code', monospace;
+            white-space: break-spaces; /* Materi Nowrap */
+            background: #000;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4ade80;
+            font-size: 0.85rem;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="tag">contoh teks spacing</span>
+        <h1>by nadlifatun nikmah</h1>
+    </header>
+
+    <div class="dashboard-grid">
+        <div class="card">
+            <h2 style="font-size: 1.2rem; color: var(--primary);">01. Flow & Indent</h2>
+            <p class="indent-demo">
+                Dalam desain ini, kita menggunakan <code>text-indent: 3em</code> untuk memberikan ruang pada awal paragraf. Dengan <code>line-height: 1.8</code>, teks menjadi jauh lebih mudah dibaca karena mata memiliki ruang napas di antara baris.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2 style="font-size: 1.2rem; color: var(--secondary);">02. Alignment System</h2>
+            <div class="align-left">>> Perataan Kiri<<</div>
+            <div class="align-center">>> Perataan Tengah <<</div>
+            <div class="align-right">Perataan Kanan <<</div>
+            <p style="text-transform: lowercase; margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">
+                (Materi Text Transform: Memaksa semua teks menjadi kecil meskipun di HTML ditulis besar).
+            </p>
+        </div>
+
+        <div class="card">
+            <h2 style="font-size: 1.2rem; color: var(--accent);">03. Visual Decoration</h2>
+            <p style="font-size: 1.1rem; line-height: 2.5;">
+                Mari coba <span class="deco-wavy">Garis Bawah Bergelombang</span>, 
+                lalu sebuah <span class="deco-over">Garis Sensor di Atas</span>, 
+                dan tentu saja <span class="deco-strike">Teks yang Dihapus</span>.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2 style="font-size: 1.2rem; color: #4ade80;">04. Preserve Spaces</h2>
+            <p>Menggunakan <code>white-space: break-spaces</code>:</p>
+            <div class="code-block">
+                Spasi    ekstra    dan
+                baris    baru    tetap
+                terlihat    rapi!
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

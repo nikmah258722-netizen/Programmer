@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-CSS Typography Lab</title>
+    <style>
+
+        :root {
+            --neon-blue: #00d2ff;
+            --neon-pink: #ff007f;
+            --neon-purple: #9d00ff;
+            --bg-dark: #0a0b10;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: radial-gradient(circle at 50% 50%, #1a1b25 0%, #0a0b10 100%);
+            color: #e0e0e0;
+            font-family: 'Rajdhani', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 5px; /* Konsep Spacing */
+            background: linear-gradient(to right, var(--neon-blue), var(--neon-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 3rem;
+            text-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+        }
+
+        /* Styling Kartu Glassmorphism */
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border: 1px solid var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            color: var(--neon-blue);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: ">>";
+            font-size: 0.8rem;
+        }
+
+        /* --- IMPLEMENTASI TEKNIK DARI GAMBAR --- */
+
+        /* 1. Spacing & Indent */
+        .indent-demo {
+            text-indent: 50px; /* Konsep Indent */
+            letter-spacing: 1px;
+            word-spacing: 3px;
+            text-align: justify;
+            color: #b0b0b0;
+        }
+
+        /* 2. Alignment */
+        .box-align {
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        .left { text-align: left; color: #fff; }
+        .center { text-align: center; color: var(--neon-blue); }
+        .right { text-align: right; color: var(--neon-pink); }
+
+        /* 3. Text Decoration */
+        .deco-list {
+            list-style: none;
+            padding: 0;
+        }
+        .underline { text-decoration: underline wavy var(--neon-blue); } /* Upgrade wavy */
+        .strike { text-decoration: line-through 2px var(--neon-pink); }
+        .overline { text-decoration: overline dashed var(--neon-purple); }
+
+        /* 4. Text Transform */
+        .upper { text-transform: uppercase; font-weight: 700; color: #fff; }
+        .lower { text-transform: lowercase; font-style: italic; }
+        .cap { text-transform: capitalize; border-bottom: 1px solid #444; }
+
+        /* 5. Nowrap / White-space */
+        .code-container {
+            font-family: 'Fira Code', monospace;
+            white-space: break-spaces; /* Konsep Nowrap */
+            background: #000;
+            padding: 20px;
+            border-radius: 10px;
+            color: #00ff41; /* Matrix green */
+            font-size: 0.9rem;
+            border-left: 4px solid var(--neon-blue);
+        }
+
+        .highlight {
+            color: var(--neon-pink);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>nadlifatun nikmah</h1>
+        <p style="letter-spacing: 2px;">xpplg1</p>
+    </header>
+
+    <div class="card">
+        <h2>Spacing & Alignment</h2>
+        <div class="box-align left">Sistem Perataan Kiri (Standard)</div>
+        <div class="box-align center">Sistem Perataan Tengah (Focus)</div>
+        <div class="box-align right">Sistem Perataan Kanan (Dynamic)</div>
+        <p class="indent-demo">
+            Ini adalah paragraf dengan teknik <span class="highlight">text-indent</span>. Di masa depan, tipografi digital tidak hanya tentang membaca, tetapi tentang pengalaman visual. Dengan mengatur <span class="highlight">line-height 1.6</span>, mata manusia dapat memproses data dengan lebih efisien tanpa merasa lelah.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Decoration & Transform</h2>
+        <p>
+            <span class="upper">hello world</span> — Teks ini ditulis kecil di HTML tapi menjadi besar. <br>
+            <span class="lower">CYBERPUNK SYSTEM</span> — Teks ini ditulis kapital tapi dipaksa mengecil. <br>
+            <span class="cap">latihan teks capitalize</span> — Setiap kata diawali huruf besar secara otomatis.
+        </p>
+        <hr style="border: 0.5px solid #333; margin: 20px 0;">
+        <p>
+            Gaya Dekorasi: 
+            <span class="underline">Garis Bawah Bergelombang</span>, 
+            <span class="strike">Data yang dihapus</span>, dan 
+            <span class="overline">Garis di atas sensor</span>.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Data Flow (White-space)</h2>
+        <div class="code-container">
+// White-space: break-spaces;
+// Spasi    di    antara    kata    ini    tetap    ada.
+// Baris baru pun tetap terjaga seperti yang kita ketik.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

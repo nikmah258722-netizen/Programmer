@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektor dalam HTML</title>
+    <style>
+        /* Selektor Tag */
+        p {
+            color: blue;
+        }
+        /* Selector Kelas */
+        .highlight{
+            background-color: yellow;
+        }
+        /*Selector ID */
+        #unique-section {
+            border: 2px solid red;
+            padding: 10px;
+        }
+        /* Selector Atribut */
+        a[href] {
+            text-decoration: none;
+            color: green;
+        }
+        /*Selektor Universal */
+        * {
+            font-family: Arial,sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1> Contoh Penggunaan Selector dalam HTML</h1>
+    <!--Selector Tag-->
+    <p>Ini adalah paraghraf yang menggunakan selector tag &lt;p&gt;</p>
+     <!--Selector Kelas-->
+     <div class="highlight">
+    <p>Ini adalah paraghraf dengan kelas "highlight".</p>
+     </div>
+      <!--Selector ID-->
+      <a href="https:www.example.com"target="blank">link dengan atribut href</a>
+       <!--Selector Universal-->
+       <p> paraghraf ini menggunakan Selector Universal.</p>
+</body>
+</html>

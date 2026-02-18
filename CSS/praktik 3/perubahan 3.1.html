@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Text Styling & Alignment</title>
+    
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #666666;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center; /* Dari Gambar 2 */
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            letter-spacing: -1px; /* Inspirasi Gambar 1 */
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Desain Card untuk setiap contoh */
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .label {
+            display: block;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px; /* Dari Gambar 1 (.small) */
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        /* Penyelarasan Teks (Dari Gambar 2) */
+        .text-left { text-align: left; }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .text-justify { text-align: justify; }
+
+        /* Gaya Khusus (Dari Gambar 1) */
+        .indent { text-indent: 3em; }
+        .line-height-extra { line-height: 2; }
+        .custom-spacing {
+            letter-spacing: -1px;
+            word-spacing: 6px;
+        }
+        .nowrap-area {
+            white-space: break-spaces;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tipografi & Perataan Teks</h1>
+        <p>by nadlifatun nikmah xpplg1</p>
+    </header>
+
+    <div class="container">
+        <div class="card text-justify">
+            <span class="label">Text Indent & Justify</span>
+            <p class="indent">
+                Ini adalah contoh paragraf dengan <strong>text indent</strong>. Teks pada baris pertama menjorok ke dalam, menciptakan struktur visual yang klasik seperti dalam buku cetak. Dikombinasikan dengan perataan <em>justify</em>, paragraf terlihat rapi di kedua sisi.
+            </p>
+        </div>
+
+        <div class="card text-center">
+            <span class="label">Line Height & Center Alignment</span>
+            <p class="line-height-extra">
+                Menggunakan <code>line-height: 2.0</code> memberikan ruang napas yang lega antar baris. Ini sangat membantu keterbacaan (readability) pada layar digital, terutama saat teks diletakkan di tengah.
+            </p>
+        </div>
+
+        <div class="card text-right">
+            <span class="label">Custom Spacing & Right Align</span>
+            <p class="custom-spacing">
+                Eksperimen dengan jarak antar kata dan huruf. Perataan kanan sering digunakan untuk kutipan atau catatan pinggir yang memberikan kesan artistik dan tidak kaku.
+            </p>
+        </div>
+
+        <div class="card">
+            <span class="label">White Space: Break-Spaces</span>
+            <p class="nowrap-area">
+                Teks ini    mempertahankan
+                spasi    dan
+                baris baru yang diketik di HTML.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
