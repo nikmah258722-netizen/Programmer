@@ -1,0 +1,24 @@
+/*Style for the external CSS file */
+body { 
+font-family: 'Times New Roman',sans-serif;
+background-color: #faeff9;
+margin:0;
+padding:0;
+}
+h1 {
+    color: rgb(249, 248, 248);
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(18, 74, 105);
+}
+h2 {
+    color:rgb(18, 74, 105);
+    text-align:left;
+    margin-top: 20px;
+}
+p {
+    color: #020108;
+    line-height:1.6 ;
+    padding: 0 20px;
+}
+   
