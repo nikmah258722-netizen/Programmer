@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Text Shadow Lab</title>
+    
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            gap: 50px;
+        }
+
+        h1 { margin: 0; transition: 0.3s; cursor: pointer; }
+
+        /* 1. EFEK NEON (Cyberpunk Style) */
+        .neon-text {
+            font-family: 'Monoton', cursive;
+            font-size: 5rem;
+            color: #fff;
+            /* Layering shadow: x y blur color */
+            text-shadow: 
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #0fa,
+                0 0 82px #0fa,
+                0 0 92px #0fa;
+        }
+        .neon-text:hover {
+            color: #0fa;
+            text-shadow: 0 0 10px #0fa, 0 0 20px #0fa, 0 0 40px #fff;
+        }
+
+        /* 2. EFEK 3D POP-OUT (Retro Style) */
+        .deep-3d {
+            font-size: 6rem;
+            color: #ff3e6d;
+            /* Membuat kedalaman dengan banyak layer tanpa blur */
+            text-shadow: 
+                1px 1px 0px #b91340,
+                2px 2px 0px #b91340,
+                3px 3px 0px #b91340,
+                4px 4px 0px #b91340,
+                5px 5px 0px #b91340,
+                10px 10px 20px rgba(0,0,0,0.5);
+        }
+
+        /* 3. EFEK SOFT GLOW (Elegant Style) */
+        .soft-glow {
+            font-size: 4rem;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+            text-shadow: 0 0 15px rgba(255,255,255,0.8);
+        }
+
+        /* 4. EFEK LONG SHADOW (Modern Design) */
+        .long-shadow {
+            font-family: 'Bungee Shade', cursive;
+            font-size: 5rem;
+            color: #ffbe0b;
+            text-shadow: 15px 15px 0px #fb5607;
+        }
+
+        .label {
+            font-family: monospace;
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .card {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="label">01. Neon Pulse Effect</div>
+        <h1 class="neon-text">NEON</h1>
+    </div>
+
+    <div class="card">
+        <div class="label">02. Deep 3D Extrude</div>
+        <h1 class="deep-3d">RETRO</h1>
+    </div>
+
+    <div class="card">
+        <div class="label">03. Minimalist Glow</div>
+        <h1 class="soft-glow">ELEGANT</h1>
+    </div>
+
+    <div class="card">
+        <div class="label">04. Pop Art Shadow</div>
+        <h1 class="long-shadow">SHADOW</h1>
+    </div>
+
+</body>
+</html>
