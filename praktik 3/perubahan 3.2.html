@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Text Decoration</title>
+    <style>
+        /* Menggunakan font yang lebih modern */
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --accent-color: #ff3e6d;
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2d3436;
+        }
+
+        h1 {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            letter-spacing: -1px; /* Konsep Spacing */
+            margin-bottom: 10px;
+        }
+
+        /* Card Style */
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* --- IMPLEMENTASI MATERI --- */
+
+        /* 1. Spacing & Indent */
+        .spacing-box {
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .indent-text {
+            text-indent: 3em; /* 3 x font-size */
+            color: #555;
+        }
+
+        /* 2. Alignment Showcase */
+        .align-demo {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 5px solid var(--accent-color);
+        }
+        .left { text-align: left; }
+        .center { text-align: center; }
+        .right { text-align: right; }
+
+        /* 3. Text Decoration (Colorful) */
+        .deco-demo {
+            font-size: 1.1rem;
+            line-height: 2.5;
+        }
+
+        .custom-underline {
+            text-decoration: underline wavy var(--accent-color);
+            text-underline-offset: 8px;
+            font-weight: 600;
+        }
+
+        .custom-strike {
+            text-decoration: line-through 3px #fab1a0;
+            color: #b2bec3;
+        }
+
+        .custom-overline {
+            text-decoration: overline dashed #6c5ce7;
+            padding-top: 5px;
+        }
+
+        /* 4. White-space (Modern Look) */
+        .code-style {
+            font-family: 'Space Mono', monospace;
+            white-space: break-spaces;
+            background: #2d3436;
+            color: #00ff88;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+        }
+
+        .small-tag {
+            font-size: 10px;
+            text-transform: uppercase;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Text Decoration</h1>
+        <p>by nadlifatun nikmah xpplg1</p>
+    </header>
+
+    <div class="card">
+        <h2>01. Spacing & Indentation</h2>
+        <p class="spacing-box indent-text">
+            Ini adalah contoh paragraf yang menggunakan teknik <strong>text-indent</strong> sebesar 3em. Dikombinasikan dengan <code>line-height: 1.8</code>, teks menjadi lebih nyaman dibaca dan terlihat profesional seperti tata letak majalah digital. <span class="small-tag">Spacing: 2px</span>
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>02. Alignment</h2>
+        <div class="align-demo left">hallo nama saya nadlifatun nikmah.</div>
+        <div class="align-demo center">hallo nama saya nadlifatun nikmah.</div>
+        <div class="align-demo right">hallo nama saya nadlifatun nikmah.</div>
+    </div>
+
+    <div class="card">
+        <h2>03. Colorful Decoration</h2>
+        <div class="deco-demo">
+            Mari kita coba <span class="custom-underline">Garis Bawah Bergelombang</span>, 
+            lalu ada teks <span class="custom-strike">yang dicoret dengan warna lembut</span>, 
+            dan tidak lupa <span class="custom-overline">Garis di Atas (Overline) Putus-putus</span> yang kreatif.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>04. White Space Control</h2>
+        <div class="code-style">
+     // Menggunakan white-space: break-spaces;
+     // Spasi    ini    akan    tetap    terlihat
+     // Sesuai dengan apa yang kita ketik di kode HTML.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
