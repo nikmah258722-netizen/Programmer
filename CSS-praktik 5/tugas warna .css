@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffe4f2, #fff0f7);
+    text-align: center;
+}
+
+header h1 {
+    color: palevioletred;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===== COLOR TEXT ===== */
+
+.nama-warna {
+    color: pink;
+}
+
+.hex {
+    color: #ffc2e2;
+}
+
+.rgb {
+    color: rgb(255, 182, 193);
+}
+
+.rgba {
+    color: rgba(255, 105, 180, 0.6);
+}
+
+.hsl {
+    color: hsl(330, 100%, 85%);
+}
+
+.hsla {
+    color: hsla(340, 100%, 88%, 0.7);
+}
