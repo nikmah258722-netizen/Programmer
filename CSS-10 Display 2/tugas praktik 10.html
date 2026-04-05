@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 10 - Implementasi CSS Overflow</title>
+    <style>
+        /* Gaya dasar untuk semua kontainer artikel */
+        article {
+            background-color: pink;
+            width: 300px;
+            height: 150px;
+            border: 2px solid gray;
+            margin-bottom: 80px; /* Jarak antar artikel agar tidak tumpang tindih */
+            padding: 10px;
+        }
+
+        /* 1. Konten tetap terlihat meski keluar dari kotak */
+        .article1 {
+            overflow: visible;
+        }
+
+        /* 2. Konten yang meluap akan dipotong dan disembunyikan */
+        .article2 {
+            overflow: hidden;
+        }
+
+        /* 3. Bilah gulir (scrollbar) akan selalu muncul */
+        .article3 {
+            overflow: scroll;
+        }
+
+        /* 4. Bilah gulir muncul secara otomatis hanya jika diperlukan */
+        .article4 {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Implementasi Properti CSS Overflow</h1>
+
+    <h3>1. Overflow: Visible (Default)</h3>
+    <article class="article1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quisquam magni ipsum aspernatur dolores iusto qui in quaerat 
+        expedita dolorem voluptate assumenda cupiditate modi sapiente 
+        veritatis cum facilis tenetur vel eius blanditiis. Libero nemo 
+        consequuntur deserunt eaque quae minus quisquam similique pariatur 
+        consectetur repellat inventore blanditiis, eveniet ipsum voluptatem 
+        velit! Properti ini membiarkan konten merembet keluar dari dimensi wadahnya.
+    </article>
+
+    <h3>2. Overflow: Hidden</h3>
+    <article class="article2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quisquam magni ipsum aspernatur dolores iusto qui in quaerat 
+        expedita dolorem voluptate assumenda cupiditate modi sapiente 
+        veritatis cum facilis tenetur vel eius blanditiis. Libero nemo 
+        consequuntur deserunt eaque quae minus quisquam similique pariatur 
+        consectetur repellat inventore blanditiis, eveniet ipsum voluptatem 
+        velit! Di sini, konten yang melebihi batas 150px akan langsung dipotong.
+    </article>
+
+    <h3>3. Overflow: Scroll</h3>
+    <article class="article3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quisquam magni ipsum aspernatur dolores iusto qui in quaerat expedita dolorem voluptate assumenda cupiditate modi sapiente veritatis cum facilis tenetur vel eius blanditiis. Libero nemo consequuntur deserunt eaque quae minus quisquam similique pariatur consectetur repellat inventore blanditiis, eveniet ipsum voluptatem velit! Pengguna harus menggeser bilah gulir untuk membaca teks ini sepenuhnya.
+    </article>
+
+    <h3>4. Overflow: Auto</h3>
+    <article class="article4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni ipsum aspernatur dolores iusto qui in quaerat expedita dolorem voluptate assumenda cupiditate modi sapiente veritatis cum facilis tenetur vel eius blanditiis. Libero nemo consequuntur deserunt eaque quae minus quisquam similique pariatur consectetur repellat inventore blanditiis, eveniet ipsum voluptatem velit! Scrollbar hanya akan muncul jika teks ini memang lebih panjang dari tinggi wadahnya.
+    </article>
+
+</body>
+</html>

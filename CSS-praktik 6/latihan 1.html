@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengubah jenis garis</title>
+    <style>
+        body {
+             margin: 0;
+             padding: 40px;
+             font-family: 'Segoe UI', sans-serif;
+             background: linear-gradient(135deg, #ffe4f2, #fff0f7);
+             text-align: center;
+        
+        }
+        h1 {
+          font-size: 5rem;
+            color: #ff3e6d;
+            /* Membuat kedalaman dengan banyak layer tanpa blur */
+            text-shadow: 
+                1px 1px 0px #b91340,
+                2px 2px 0px #b91340,
+                3px 3px 0px #b91340,
+                4px 4px 0px #b91340,
+                5px 5px 0px #b91340,
+                10px 10px 20px rgba(0,0,0,0.5);
+        }
+        .solid {
+            border: 10px solid black;
+            padding: 20px;
+            margin: 20px auto;
+            width: 150px;
+            text-align: center;
+        }
+        .double {
+            border: 10px double blue;
+            padding: 20px;
+            margin: 20px auto;
+            width: 150px;
+            text-align: center;
+        }
+         .groove {
+            border: 10px groove green;
+            padding: 20px;
+            margin: 20px auto;
+            width: 150px;
+            text-align: center;
+        }
+        .ridge {
+            border: 10px ridge red;
+            padding: 20px;
+            margin: 20px auto;
+            width: 150px;
+            text-align: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>4 jenis garis</h1>
+    <div class="solid">Garis Solid</div>
+     <div class="double">Garis Double</div>
+     <div class="groove">Garis Groove</div>
+    <div class="ridge">Garis ridge</div>
+    
+</body>
+</html>
