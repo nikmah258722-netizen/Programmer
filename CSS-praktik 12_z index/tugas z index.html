@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas CSS z-index</title>
+    <style>
+        .container {
+            position: relative;
+            height: 400px;
+            margin-top: 50px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            position: absolute; 
+            border: 5px solid rgb(159, 220, 244);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .gambar1 {
+            z-index: 3;
+            top: 0;
+            left: 0;
+        }
+        .gambar2 {
+            z-index: 2;
+            top: 50px;
+            left: 50px;
+        }
+        .gambar3 {
+            z-index: 1;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ESTETIK</h2>
+    <p>adalah pokoknya</p>
+
+    <div class="container">
+        <img src="download (10).jpg" alt="ASTRONOT" class="gambar1">
+        <img src="download (11).jpg" alt="TATASURYA" class="gambar2">
+        <img src="download (12).jpg" alt="SATURNUS" class="gambar3">
+    </div>
+
+</body>
+</html>
